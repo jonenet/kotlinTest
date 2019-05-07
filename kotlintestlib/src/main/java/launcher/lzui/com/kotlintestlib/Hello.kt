@@ -35,8 +35,12 @@ fun main(args: Array<String>) {
 //    val arr1 = arrayOf(user)
 //    println(user.main2(arr1))
 
-    user.testFor()
+//    user.testFor()
 //    user.changeNum()
+    var people = People("", "")
+    people.firstName  = "jone"
+    people.lastName  = "jonenet"
+    println("firstName = ${people.firstName } lastName = ${people.lastName}")
 }
 
 
