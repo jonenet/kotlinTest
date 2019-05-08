@@ -1,7 +1,5 @@
 package launcher.lzui.com.kotlintestlib.okhttpChain
 
-import android.util.Log
-
 class RetryAndFollowInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): String? {
