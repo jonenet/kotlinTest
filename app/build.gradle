@@ -22,11 +22,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation rootProject.ext.dependencies['appcompat']
     implementation rootProject.ext.dependencies['constraint']
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"
-    
     testImplementation rootProject.ext.test['junit']
     androidTestImplementation rootProject.ext.test['runner']
     androidTestImplementation rootProject.ext.test['espresso']
